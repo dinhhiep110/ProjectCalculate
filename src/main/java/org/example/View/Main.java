@@ -9,16 +9,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int choose;
         do {
             makeMenu();
             try{
                 ShapeAction shape;
-                choose = Integer.parseInt(s.nextLine().trim());
+                choose = Integer.parseInt(scanner.nextLine().trim());
                 while (choose > 3  || choose < 0){
                     System.out.println("Please re input your chosen");
-                    choose = Integer.parseInt(s.nextLine().trim());
+                    choose = Integer.parseInt(scanner.nextLine().trim());
                 }
                 switch (choose){
                     case 1:
